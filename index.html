@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Bhushan Borse Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<style>
+		/*======================================
+//--//-->   ABOUT
+======================================*/
+
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+
+		/* Animation styles */
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			/* position: absolute; */
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+
+		/* project image zoom effect */
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+	</style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Bhushan Borse</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<!--NEW CODE  -->
+					<li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+					<li class="nav-item"><a href="#interests-section" class="nav-link"><span>Interests</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/Bhushan_Profile.jpg);">
+							<!-- <div class="one-third order-md-last img" style="background-image: url(images/Bhushan_Profile.jpg); height: 700px; background-size: contain; background-repeat: no-repeat; background-position: center;"> -->
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<!-- <span class="subheading">Hello!</span> -->
+								<br><br><br>
+								<span class="subheading" style="font-size: 20px;">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Bhushan Borse</span></h1>
+
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
+
+								<script>
+
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									// Create an array of typing text
+									const typingTexts = [
+										'Engineer  ',
+										'Data Enthusiast  ',
+										'Adventure Seeker   ',
+									];
+
+									// Create a function to display the typing animation for a given text
+									function playTypingAnimation(text) {
+										// Loop through each character and add it to the element
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200); // Increase the delay to slow down the typing animation
+										}
+
+										// Once the animation is complete, reset the text and start over
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									// Start the typing animation loop
+									playTypingAnimation(typingTexts[0]);
+
+								</script>
+
+								<br>
+								<br>
+								<h2>An Aspiring<br>
+									Data Analyst</h2>
+								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+								<br>
+								<h3 style="font-size: 20px;">
+									Data Analytics Enthusiast &nbsp | &nbsp Ex AU Bank <br> NIT Nagpur&nbsp|&nbsp SQL
+									&nbsp| Python | Advanced Excel <br> Data Visualization &nbsp| &nbspMachine Learning
+									<br> Statistics &nbsp| &nbsp Business Communication
+								</h3>
+								<br>
+								<p><a href="https://www.linkedin.com/in/bhushansborse"
+										class="btn btn-primary py-3 px-4">LinkedIn</a>
+									<a href="https://github.com/bhushansbcareer"
+										class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section"
+		style="margin-top: 40px; padding-top: 5px;">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/about-me.jpg" class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+											<!-- <p><span class="title-s">Name: </span> <span>Bhushan Borse</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Software Engineer</span></p>
+										<p><span class="title-s">Experience: </span> <span>2 Years 6 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Pune, India</span></p> -->
+											<!-- <p><span class="title-s"><strong>Name:</strong></span> <span>Bhushan Borse</span></p> -->
+
+											<p><span style="font-weight: bold; color: white;">Name:</span> <span
+													style="color: white;">Bhushan Borse</span></p>
+											<p><span style="font-weight: bold; color: white;">Job Role:</span> <span
+													style="color: white;">Software Engineer</span></p>
+											<p><span style="font-weight: bold; color: white;">Experience:</span> <span
+													style="color: white;">2 Years 6 Months</span></p>
+											<p><span style="font-weight: bold; color: white;">Address:</span> <span
+													style="color: white;">Pune, India</span></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="skill-mf">
+									<p class="title-s"
+										style="font-size: 20px; font-weight: bold; color: white; margin: 10px 0 20px 0; text-align: center; border-bottom: 2px solid white; padding-top: 10px;">
+										Skills
+									</p>
+
+									<span style="color: white; margin-right: 390px;">SQL</span>
+									<span class="pull-right" style="color: white;">90%</span>
+
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span style="color: white; margin-right: 363px;">Python</span>
+									<span class="pull-right" style="color: white;">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<!-- <span>Data Visualization</span> <span class="pull-right">90%</span> -->
+									<span style="color: white; margin-right: 275px;">Data Visualization</span>
+									<span class="pull-right" style="color: white;">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span style="color: white; margin-right: 273px;">Statistical Analysis</span>
+									<span class="pull-right" style="color: white;">70%</span>
+									<!-- <span>Statistical Analysis</span> <span class="pull-right">85%</span> -->
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span style="color: white; margin-right: 278px;">Machine Learning</span>
+									<span class="pull-right" style="color: white;">70%</span>
+									<!-- <span>Machine Learning</span> <span class="pull-right">80%</span> -->
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+
+								<div>
+
+									<section class="ftco-section ftco-no-pb" id="resume-section"
+										style="margin-top: 20px; padding-top: 30px;">
+
+										<div class="container">
+											<div class="row justify-content-center pb-5">
+												<div class="col-md-10 heading-section text-center ftco-animate">
+													<h1 class="big big-2" style="font-size: 90px;">Resume</h1>
+													<h2 class="mb-4">Resume</h2>
+													<p style="color: white; width: 110%; text-align: justify;">
+														A disciplined, result-driven and detail-oriented IT professional
+														with 2.5 years of experience exploring a challenging role in the
+														field of Data Science and Analytics seeking to leverage
+														analytical skills to make data driven decisions.
+													</p>
+												</div>
+												<!-- <div class="row mt-5">
+													<div class="col-md-6 ftco-animate">
+														<p><a href="#" class="btn btn-primary py-4 px-5"
+																style="width: 240%;">Download</a></p>
+													</div>
+												</div> -->
+												<div class="row mt-5">
+													<div class="col-md-6 ftco-animate">
+														<p>
+															<a href="https://drive.google.com/file/d/1-_C58UGVqHMNyjXp4X71gA6sFGv4wYrB/view?usp=sharing"
+																class="btn btn-primary px-5"
+																style="width: 240%; padding-top: 0.9rem; padding-bottom: 0.9rem; font-weight: 600;">
+																Download
+															</a>
+														</p>
+													</div>
+												</div>
+
+											</div>
+									</section>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<!-- <h1 class="big">About</h1> -->
+								<h1 class="big big-2" style="font-size: 90px;">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p style="color: white; width: 100%; text-align: justify;">
+									I am a proactive and result oriented professional offering <strong>2.5
+										years</strong> of experience in <strong>Database Development</strong> within the
+									<strong>banking industry</strong>, accompanied by a <strong>bachelor's
+										degree</strong> in engineering from the prestigious <strong>National Institute
+										of Technology, Nagpur</strong>.
+									Proficient in working on technologies like SQL, Python, Pandas, NumPy, Advanced
+									Excel, Tableau, Data Analysis, Statistical Analysis, Hypothesis Testing, &amp;
+									Machine Learning.
+									Demonstrated success in delivering impactful projects and resolving key business
+									challenges, and supported in strategic decision making process.
+								</p>
+
+
+								<!-- <ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span style="color: white; margin-right: 278px;">Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Education:</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span style="color: white; margin-right: 278px;">Bachelor in Engineering</span></li>
+									<li class="d-flex"><span>Languages:</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span style="color: white; margin-right: 278px;">English, Hindi, Marathi</span></li>
+									<li class="d-flex"><span>Tools &amp; Programming:</span> <span style="color: white; margin-right: 278px;">SQL, Python, Pandas, NumPy, Matplotlib, Seaborn, Power BI, Tableau, Excel, Pivot Table, LOOKUP</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+									
+								</ul> -->
+								<ul class="about-info mt-4 px-md-0 px-2" style="width: 100%;">
+									<li class="d-flex justify-content-between"
+										style="border-bottom: 1px solid white; padding: 8px 0;">
+										<span style="color: white; font-weight: bold;">Profile:</span>
+										<span style="color: white;">Data Science &amp; Analytics</span>
+									</li>
+									<li class="d-flex justify-content-between"
+										style="border-bottom: 1px solid white; padding: 8px 0;">
+										<span style="color: white; font-weight: bold;">Education:</span>
+										<span style="color: white;">Bachelor of Technology in Electrical
+											Engineering</span>
+									</li>
+									<li class="d-flex justify-content-between"
+										style="border-bottom: 1px solid white; padding: 8px 0;">
+										<span style="color: white; font-weight: bold;">Tools &amp; Programming:</span>
+										<span style="color: white;">SQL, Python, Pandas, NumPy, Matplotlib, Seaborn,
+											Power BI, Tableau, Excel, Pivot Table, LOOKUP</span>
+									</li>
+									<li class="d-flex justify-content-between"
+										style="border-bottom: 1px solid white; padding: 8px 0;">
+										<span style="color: white; font-weight: bold;">Data Analysis &amp; BI:</span>
+										<span style="color: white;">EDA, Statistical Analysis, Hypothesis Testing,
+											Dashboarding, KPI Measurement, Reporting, Trend Analysis, A/B
+											Testing.</span>
+									</li>
+									<li class="d-flex justify-content-between"
+										style="border-bottom: 1px solid white; padding: 8px 0;">
+										<span style="color: white; font-weight: bold;">Data Processing:</span>
+										<span style="color: white;">Data Cleaning, Data Wrangling, Data Validation, Data
+											Modeling, Data Aggregation, Large-scale Data Handling.</span>
+									</li>
+									<li class="d-flex justify-content-between"
+										style="border-bottom: 1px solid white; padding: 8px 0;">
+										<span style="color: white; font-weight: bold;">Machine Learning:</span>
+										<span style="color: white;">Supervised ML Algorithms, Regression,
+											Classification, Unsupervised ML Algorithms, Clustering</span>
+									</li>
+									<li class="d-flex justify-content-between"
+										style="border-bottom: 1px solid white; padding: 8px 0;">
+										<span style="color: white; font-weight: bold;">Soft Skills:</span>
+										<span style="color: white;">Attention to Detail, Business Communication,
+											Teamwork, Cross functional Collaboration, Stakeholder Management</span>
+									</li>
+									<li class="d-flex justify-content-between"
+										style="border-bottom: 1px solid white; padding: 8px 0;">
+										<span style="color: white; font-weight: bold;">Languages:</span>
+										<span style="color: white;">English, Hindi, Marathi</span>
+									</li>
+									<li class="d-flex justify-content-between" style="padding: 8px 0;">
+										<!-- No border on last item -->
+										<span style="color: white; font-weight: bold;">Interest:</span>
+										<span style="color: white;">Fitness &amp; Strength Training, Marathon Running,
+											Trekking &amp; Adventure, Travel &amp; Cultural Exploration</span>
+									</li>
+								</ul>
+
+
+
+							</div>
+						</div>
+
+
+						<!-- <div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								
+								<p><a href="https://www.linkedin.com/in/bhushansborse" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- <section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through
+						data-driven insights. Proven expertise in data science, statistical analysis, machine learning
+						algorithms and project management.</p>
+				</div>
+			</div>
+
+	</section> -->
+
+	<!-- NEW CODE -->
+	<section class="ftco-section ftco-no-pb" id="experience-section" style="margin-top: -50px; padding-top: 5px;">
+		<!-- </section> -->
+
+		<!-- NEW CODE -->
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Experience</h1>
+					<h2 class="mb-2">Experience</h2>
+					<p style="color: white;">
+						A Seasoned Developer with 2.5 years of experience working with data in IT department of banking
+						industry.<br>
+						Proven expertise in data analysis, dashboarding, statistical analysis and machine learning
+						algorithms.
+					</p>
+
+				</div>
+
+				<!-- <div style="text-align: center; margin-top: 0;">
+					<div class="resume-wrap ftco-animate"
+						style="margin-top: 10px; margin-bottom: -15px; padding-top: 10px; padding-bottom: 5px;">
+						<h2 style="font-weight: bold; font-size: 20px;">July 2022 - January 2025</h2>
+						<span class="date">Software Engineer</span><br>
+						<h2 style="font-weight: bold; font-size: 20px;">AU Small Finance Bank</h2>
+					</div>
+				</div> -->
+
+				<div style="position: relative; text-align: center; margin-top: 10px; margin-bottom: -15px;">
+					<!-- Background Image -->
+					<img src="images/au.jpg" alt="AU Small Finance Bank"
+						style="width: 60%; height: auto; border-radius: 8px;">
+
+					<!-- Overlay Text -->
+					<div
+						style="position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%); color: orange;">
+						<h2 style="font-weight: bold; font-size: 20px; margin-bottom: -10px;">July 2022 - January 2025
+						</h2>
+						<span class="date"
+							style="display: block; font-weight: 600; font-size: 30px; margin-bottom: -10px;">Software
+							Engineer</span>
+						<!-- <h2 style="font-weight: bold; font-size: 20px; margin-top: 0px;">AU Small Finance Bank</h2> -->
+						<h2
+							style="font-weight: bold; font-size: 20px; margin-top: 0px; display: flex; align-items: center; justify-content: center; gap: 4px;">
+							<img src="images/aulogo.png" alt="AU Bank Logo" style="height: 24px; width: auto;">
+							Small Finance Bank
+						</h2>
+
+					</div>
+				</div>
+
+
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate" style="padding-top: 15px; padding-bottom: 5px;">
+						<h2 style="font-size: 20px; font-weight: 800;">Aug 2022 - Dec 2022</h2>
+						<span class="date" style="font-size: 20px; font-weight: 800;">Cluster Head Branch Visit Report
+							Application</span>
+						<ul style="color: white;">
+							<li>Led the creation and implementation of database structures in accordance with industry
+								standards, maximizing efficiency,
+								and safeguarding data integrity.</li>
+							<li>Utilized Excel and Python for efficient data cleaning and manipulation, leveraged SQL to
+								streamline data
+								workflows and optimize database operations.</li>
+							<li>Built SQL query-integrated APIs to retrieve, modify and load data, facilitating seamless
+								interactions.</li>
+							<li>Effectively worked with a team of 3 members, ensuring team collaboration and timely
+								project
+								delivery.</li>
+						</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate" style="padding-top: 15px; padding-bottom: 30px;">
+						<h2 style="font-size: 20px; font-weight: 800;">Jan 2023 - Jan 2025</h2>
+						<span class="date" style="font-size: 20px; font-weight: 800;">Customer Onboarding
+							Application</span>
+						<ul style="color: white;">
+							<li>Implemented validations using SQL Procedures enhancing data accuracy by 40%, while
+								ensuring
+								business regulations.</li>
+							<li>Optimized customer account creation processes, leading to a 30% reduction in TAT.</li>
+							<li>Coordinated deployments across both testing and production environments, ensuring
+								seamless
+								project deliveries while troubleshooting and resolving critical production issues as
+								needed.</li>
+
+						</ul>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="project-section" style="margin-top: 0px; padding-top: 0px;">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+					<p style="color: white; font-size: 16px; font-weight: 600;">Below are some Data Analytics projects
+						on SQL, Python, Tableau and
+						ML.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -60px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a href="https://github.com/bhushansbcareer/Enhancing-Gross-Margin-for-Zara-Sales"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/zara.png'); height: 200px; background-size: cover; border-radius: 10px">
+						</a>
+						<div class="text mt-3">
+							<h3 class="heading" style="text-align: center;">
+								<a href="https://github.com/bhushansbcareer/Enhancing-Gross-Margin-for-Zara-Sales"
+									style="text-decoration: none; color: inherit;">
+									Maximizing Zara’s Gross Margin by Data-Driven Retail Strategy
+								</a>
+							</h3>
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								The project focused on optimizing Zara’s Gross Margin through data-driven insights by
+								leveraging 6.4 million rows of global retail transactions dataset. The analysis includes
+								data cleaning,
+								feature engineering, and building visualization to enhance business decision-making.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -80px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a href="https://github.com/bhushansbcareer/Analysing-Amazon-Brazil-Dataset-using-SQL"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/amazon.png'); height: 200px; background-size: cover; border-radius: 10px">
+						</a>
+						<div class="text mt-3">
+							<h3 class="heading" style="text-align: center;">
+								<a href="https://github.com/bhushansbcareer/Analysing-Amazon-Brazil-Dataset-using-SQL"
+									style="text-decoration: none; color: inherit;">
+									Analysing Amazon Brazil’s Dataset for Indian Market Strategy
+								</a>
+							</h3>
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								The project was to analyze Amazon Brazil's retail data to identify trends and customer
+								behaviors that can be leveraged in the Indian market. The insights that were delivered
+								were to help Amazon India
+								make data-driven decisions, enhance customer experience, and seize new opportunities.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -80px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a href="https://github.com/bhushansbcareer/Detailed-Exploratory-Analysis-of-Bumble-Profile-User-Data"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/bumb.png'); height: 200px; background-size: cover;border-radius: 10px">
+						</a>
+						<div class="text mt-3">
+							<h3 class="heading" style="text-align: center;">
+								<a href="https://github.com/bhushansbcareer/Detailed-Exploratory-Analysis-of-Bumble-Profile-User-Data"
+									style="text-decoration: none; color: inherit;">
+									Detailed Explaratory Analysis of Bumble User Profile using Python
+								</a>
+							</h3>
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								This project was to conduct an exploratory analysis of Bumble user profiles dataset to
+								uncover insights into demographics, preferences, and behavioral trends. The findings
+								were aimed at to help improve user engagement/usage, matchmaking algorithms and
+								platform personalization.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<br><br><br>
+			<!-- added justify-content-center to center align the last two projects -->
+			<div class="row d-flex justify-content-center">
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -80px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a href="https://github.com/bhushansbcareer/Insurance-Data-Regression-Analysis-using-Excel"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/insurance.jpeg'); height: 200px; background-size: cover; border-radius: 10px">
+						</a>
+						<div class="text mt-3">
+							<h3 class="heading" style="text-align: center;">
+								<a href="https://github.com/bhushansbcareer/Insurance-Data-Regression-Analysis-using-Excel"
+									style="text-decoration: none; color: inherit;">
+									Health Insurance Data Regression Analysis using Excel
+								</a>
+							</h3>
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								Validated key prerequisites and conditions essential for accurate regression analysis
+								using Excel charts, pivot tables, and ANOVA tests. Evaluated relationships through
+								detailed charting and aggregations. Used Excel's ANOVA feature to assess statistical
+								significance and variability across groups.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -80px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a href="https://github.com/bhushansbcareer/Evaluating-Flipkart-Customer-Service-Operations-using-Excel"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/flip.jpeg'); height: 200px; background-size: cover; border-radius: 10px">
+						</a>
+						<div class="text mt-3">
+							<h3 class="heading" style="text-align: center;">
+								<a href="https://github.com/bhushansbcareer/Evaluating-Flipkart-Customer-Service-Operations-using-Excel"
+									style="text-decoration: none; color: inherit;">
+									Evaluating Flipkart's Customer Service to Improve CSAT
+								</a>
+							</h3>
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								Flipkart, one of India’s leading e-commerce platforms was facing a decline in customer
+								retention. This project analyzes customer service call center data to uncover insights
+								into customer
+								service performance and its impact on customer satisfaction and retention. Used
+								Aggregations, Excel Charts.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -80px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a href="https://github.com/bhushansbcareer/Swiggy-Web-Traffic-and-User-Engagement-Dashboard"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/swiggy.jpeg'); height: 200px; background-size: cover; border-radius: 10px">
+						</a>
+						<div class="text mt-3">
+							<h3 class="heading" style="text-align: center;">
+								<a href="https://github.com/bhushansbcareer/Swiggy-Web-Traffic-and-User-Engagement-Dashboard"
+									style="text-decoration: none; color: inherit;">
+									Swiggy Web Traffic and User Engagement Dashboard
+								</a>
+							</h3>
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								Swiggy was experiencing high web traffic
+								but lower-than-expected conversion rates. This project aimed to analyze user behavior
+								and traffic patterns to uncover actionable insights that can help Swiggy’s marketing
+								team optimize digital strategy, enhance user engagement, improve conversion rate.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section ftco-no-pb" id="education-section"
+		style="margin-top: -120px;margin-bottom: 280px; padding-top: 10px;">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 heading-section text-center ftco-animate">
+					<h1 class="big big-2" style="font-size: 80px;">Education</h1>
+					<h2 class="mb-4">Education</h2>
+				</div>
+			</div>
+
+
+
+			<br>
+
+			<div style="position: relative; text-align: center; margin-top: -35px; margin-bottom: 0px;">
+				<!-- Background Image -->
+				<img src="images/Graduation.png" alt="AU Small Finance Bank"
+					style="width: 45%; height: auto; border-radius: 8px;">
+
+				<!-- Overlay Text -->
+				<div style="position: absolute; top: 122%; left: 50%; transform: translate(-50%, -50%); color: orange;">
+					<h2 style="font-weight: bold; font-size: 25px; margin-bottom: -5px;">2018-2022</h2>
+					<span class="date" style="font-size: 30px; font-weight: 800; margin-bottom: -5px;">Bachelor of
+						Technology</span><br>
+					<span style="font-size: 25px; font-weight: 450; color: white;">Electrical Engineering</span>
+					<h2 style="font-weight: bold; font-size: 30px; margin-bottom: 5px; color: orange;">
+						National Institute of Technology, Nagpur
+					</h2>
+
+				</div>
+			</div>
+
+			<!-- <div class="row">
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate"
+						style="margin-top: 10px; margin-bottom: -15px; padding-top: 10px; padding-bottom: 5px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+						<h2 style="font-weight: bold; font-size: 20px;">2018-2022</h2>
+						<span class="date" style="font-size: 25px; font-weight: 800;">Bachelor of Technology</span>
+						<span style="font-size: 20px; font-weight: 450; color: white;">Electrical Engineering</span>
+						<h2 style="font-weight: bold; font-size: 20px; margin-bottom: 5px;">
+							National Institute of Technology, Nagpur
+						</h2>
+						<p style="color: white; margin-top: 0;">Grade: 7.15 CGPA</p>
+
+					</div>
+				</div>
+
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate"
+						style="margin-top: 10px; margin-bottom: -15px; padding-top: 10px; padding-bottom: 5px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+						<h2 style="font-weight: bold; font-size: 20px;">2016-2016</h2>
+						<span class="date" style="font-size: 25px; font-weight: 800;">Higher Secondary School</span>
+						<span style="font-size: 20px; font-weight: 450; color: white;">12th Maharashtra State
+							Board</span>
+						<h2 style="font-weight: bold; font-size: 20px; margin-bottom: 5px;">
+							Matoshri Junior College, Nashik
+						</h2>
+						<p style="color: white; margin-top: 0;">Percentage: 75.85%</p>
+
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</section>
+
+
+	<section class="ftco-section" id="interests-section" style="margin-top: 5px; padding-top: 5px;">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Interests</h1>
+					<h2 class="mb-4">Interests</h2>
+					<p style="color: white; font-size: 18px; font-weight: 600;">Here are a few things I enjoy outside of
+						work</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -60px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a class="block-20 zoom-effect"
+							style="background-image: url('images/fitness.jpg'); height: 400px; width: auto; border-radius: 10px; background-size: cover;">
+						</a>
+						<div class="text mt-3">
+							<h3 class="heading" style="text-align: center;">
+								<a style="text-decoration: none; color: inherit;">
+									Fitness & Strength Training
+								</a>
+							</h3>
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								Forging a physique that mirrors discipline, dedication and speaks of perseverance.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -80px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a class="block-20 zoom-effect"
+							style="background-image: url('images/Marathon.png'); height: 400px; width: auto; border-radius: 10px; background-size: cover;">
+						</a>
+						<div class="text mt-3">
+							<h3 class="heading" style="text-align: center;">
+								<a style="text-decoration: none; color: inherit;">
+									Marathon Running
+								</a>
+							</h3>
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								Building patience, teaching the mind to go the distance when the body wants to quit.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -80px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a href="https://github.com/bhushansbcareer/Detailed-Exploratory-Analysis-of-Bumble-Profile-User-Data"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/treks.jpg'); height: 400px; width: auto; border-radius: 10px; background-size: cover;">
+						</a>
+						<div class="text mt-3">
+							<h3 class="heading" style="text-align: center;">
+								<a href="https://github.com/bhushansbcareer/Detailed-Exploratory-Analysis-of-Bumble-Profile-User-Data"
+									style="text-decoration: none; color: inherit;">
+									Trekking & Adventure
+								</a>
+							</h3>
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								Climbing beyond limits to discover new perspectives and find peace beyond noise.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<br><br><br>
+			<!-- added justify-content-center to center align the last two projects -->
+			<div class="row d-flex justify-content-center">
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -80px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a class="block-20 zoom-effect"
+							style="background-image: url('images/travels.jpg'); height: 400px; width: auto; border-radius: 10px; background-size: cover;">
+						</a>
+						<div class="text mt-3">
+							<h3 class="heading" style="text-align: center;">
+								<a style="text-decoration: none; color: inherit;">
+									Travel & Cultural Exploration
+								</a>
+							</h3>
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								Meeting people, tasting cultures, immersing in traditions and collecting stories.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -80px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a href="https://youtube.com/shorts/SvhbTv0QLnA?si=HvaOM7RBsUsn8l52" target="_blank" class="block-20 zoom-effect"
+							style="background-image: url('images/gim.jpg'); height: 400px; width: auto; border-radius: 10px; background-size: cover;">
+						</a>
+
+						<div class="text mt-3">
+
+							<h3 class="heading" style="text-align: center;">
+								Building and Innovating
+								<a href="https://youtube.com/shorts/SvhbTv0QLnA?si=HvaOM7RBsUsn8l52" target="_blank"
+									style="text-decoration: none; color: inherit;">
+									(Video)
+								</a>
+							</h3>
+
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								Engineered and equipped a fully functional gym on the home terrace from scratch.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 d-flex ftco-animate" style="margin-top: -80px; padding-top: 0px;">
+					<div class="blog-entry justify-content-end"
+						style="width: 100%; display: flex; flex-direction: column;">
+						<a class="block-20 zoom-effect"
+							style="background-image: url('images/music.jpg'); height: 400px; width: auto; border-radius: 10px; background-size: cover;">
+						</a>
+						<div class="text mt-3">
+							<h3 class="heading" style="text-align: center;">
+								<a style="text-decoration: none; color: inherit;">
+									Music and Entertainment
+								</a>
+							</h3>
+							<p style="margin: 0; width: 100%; text-align: justify;">
+								I turn to music and entertainment as a way to relax, recharge and unwind.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+
+	</section>
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter"
+		style="margin-top: 100px; padding-top: 5px;">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="20">0</strong>
+							<span>Achievements</span>
+						</div>
+					</div>
+				</div> -->
+				<!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="30">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div> -->
+				<!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="1000">0</strong>
+							<span>Mentored Students</span>
+						</div>
+					</div>
+				</div> -->
+				<!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="500">0</strong>
+							<span>Cups of coffee</span>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/proj_411.jpg)">
+			<!-- <div class="container"> -->
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Visit Projects on<span> Github </span> </h2>
+					<div class="heading">
+						<h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/bhushansbcareer" class="btn btn-primary py-3 px-5">GitHub</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section"
+		style="margin-top: 120px; padding-top: 5px;">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p style="color: white; margin-bottom: -50px;">Below are the details to reach out to me!</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Pune, India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+
+							<a href="tel:+919822168481" target="_blank">
+								<span class="icon-phone2"></span>
+							</a>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel:+919822168481">+91 98221 68481</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<a href="mailto:bhushansb.career@gmail.com" target="_blank">
+								<span class="icon-paper-plane"></span>
+							</a>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:bhushansb.career@gmail.com">bhushansb.career@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<a href="https://drive.google.com/file/d/1-_C58UGVqHMNyjXp4X71gA6sFGv4wYrB/view?usp=sharing"
+								target="_blank">
+								<span class="icon-file"></span>
+							</a>
+						</div>
+						<h3 class="mb-4">Download Resume</h3>
+						<p><a href="https://drive.google.com/file/d/1-_C58UGVqHMNyjXp4X71gA6sFGv4wYrB/view?usp=sharing">Resume
+								Link</a></p>
+					</div>
+				</div>
+
+				<div class="container">
+					<br>
+					<br>
+					<!-- <div class="row justify-content-center">
+						<div class="col-md-7 ftco-animate text-center">
+							<h2>Have a<span> Question? </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77"
+									class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+						</div>
+					</div> -->
+					<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+						<li class="ftco-animate normal-txt">Find me on </li>
+
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/bhushansborse"><span
+									class="icon-linkedin"></span></a></li>
+
+						<li class="ftco-animate"><a href="https://www.instagram.com/bhushansborse"><span
+									class="icon-instagram"></span></a></li>
+					</ul>
+					<br>
+				</div>
+			</div>
+	</section>
+
+
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | This
+						template
+						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
